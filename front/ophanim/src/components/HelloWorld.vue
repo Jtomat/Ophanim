@@ -34,7 +34,7 @@ export default {
               .then((response) => {
                 this.parseId = response.data.parse_id;
                 axios.post("http://localhost:8081/api/analyze", {parse_id : this.parseId})
-                        .then((response) => {
+                        .then(() => {
                           // wait, show output
                         })
               })

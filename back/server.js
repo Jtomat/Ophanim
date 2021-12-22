@@ -29,7 +29,7 @@ db.sequelize.sync();
 
 // simple route
 app.get("/", (req, res) => {
-    res.json({ message: "Welcome to suedom." });
+    res.json({ message: "Welcome to Ophanim." });
 });
 require('./routes/routes.routes')(app);
 // set port, listen for requests
